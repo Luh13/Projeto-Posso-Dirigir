@@ -1,7 +1,8 @@
+#Meu projeto
 import customtkinter as ctk
 from tkinter import messagebox
 
-ctk.set_appearance_mode("dark")
+ctk.set_appearance_mode("light") #mudei para o modo claro
 ctk.set_default_color_theme("blue")
 
 janela = ctk.CTk()
@@ -24,9 +25,9 @@ def verificar_habilitacao():
         return
  
     if idade >= 18:
-        resultado_label.configure(text=f"{nome}, você está apto(a) a dirigir!", text_color="green")
+        resultado_label.configure(text=f"{nome}, você está apto(a) a dirigir!", text_color="purple") #mudei a cor
     else:
-        resultado_label.configure(text=f"{nome}, você NÃO está apto(a) a dirigir.", text_color="red")
+        resultado_label.configure(text=f"{nome}, você NÃO está apto(a) a dirigir.", text_color="blue") #mudei a cor
 
 # Executa a função
 label_nome = ctk.CTkLabel(janela, text="Digite seu nome:")
