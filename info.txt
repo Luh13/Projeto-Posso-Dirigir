@@ -1,0 +1,5 @@
+Versionamento e Colaboração
+
+*.txt
+*.env
+/env
